@@ -32,7 +32,7 @@ def createtables(name):
         Column('Date', Date, nullable = False),
         Column('Percent', Integer, nullable = True),
         Column('Seconds_left', Integer, nullable = True),
-        Column('Power_Pluffed', String, nullable = True)
+        Column('Power_Pluffed', String(50), nullable = True)
     )
 
     #Create all tables
