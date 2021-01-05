@@ -124,7 +124,7 @@ print("Battery Table: \n")
 ReadTable(dbname, Battery)
 print(separation)
 
-graph_table = str(input("Which table do you want to see on a graph ?"))
+Table = str(input("Which table do you want to see on a graph ?"))
 
 dataframe = pd.read_sql('SELECT * FROM {}'.Table)
 dataframe.plot(x ='time', y='data')
