@@ -128,7 +128,7 @@ graph_table = str(input("Which table do you want to see on a graph ?"))
 
 dataframe = pd.read_sql('SELECT * FROM {}'.Table)
 dataframe.plot(x ='time', y='data')
-plt.title('Graph of Data by Time')
+plt.title('Graph of {} by Time'.format(Table))
 plt.ylabel('Collected Data')
 plt.xlabel('Time in seconds')
 plt.savefig('Graph.png')
